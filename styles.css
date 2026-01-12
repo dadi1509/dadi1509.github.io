@@ -1,6 +1,8 @@
 body {
     background-color: #c9b9a6;
     font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 12; 
 }
 
 header {
