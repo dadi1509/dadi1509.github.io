@@ -1,13 +1,13 @@
 body {
-    background-color: #c9b9a6;
+    background-color: #fffcf2;
     font-family: Helvetica, sans-serif;
     margin: 0;
     padding: 12; 
 }
 
 header {
-    color: white;
-    background-color: #4a90e2;
+    color: #fffcf2;
+    background-image: linear-gradient(to bottom right, #2aa4cf, #65c5bc, #6377be, #71afdc);
     font-family: "Lato", sans-serif;
 }
 
