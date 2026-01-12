@@ -5,10 +5,11 @@ body {
     padding: 12; 
 }
 
-header {
+.main-header {
     color: #fffcf2;
     background-image: linear-gradient(to bottom right, #2aa4cf, #65c5bc, #6377be, #71afdc);
     font-family: "Lato", sans-serif;
+    height : 150px;
 }
 
 main {
