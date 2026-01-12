@@ -6,4 +6,10 @@ body {
 header {
     color: white;
     background-color: #4a90e2;
+    font-family: "Lato", sans-serif;
+}
+
+main {
+    line-height: 1.6;
+    font-family: "Open Sans", sans-serif;
 }
