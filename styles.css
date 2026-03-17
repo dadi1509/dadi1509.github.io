@@ -42,7 +42,7 @@ main {
     font-family: "Inter", sans-serif;
 }
 
-img.header {
+img.headshot {
     margin-left: 70px;
     margin-top: -700px;
     clip-path: circle(39%);
