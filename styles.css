@@ -1,7 +1,7 @@
 body {
     background-color: #fffcf2;
-    margin: 0px;
-    padding: 0px; 
+    margin: 0;
+    padding: 0; 
 }
 
 .main-header {
@@ -19,31 +19,62 @@ body {
     z-index: 999;
 }
 
-main {
-    line-height: 1.6;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 60px 0 60px;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
 }
 
-.greeting {
-    color: #0051ba;
-    text-align : center;
+.about-me-text {
+    flex: 1 1 400px;
+}
+ 
+.headshot-image {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
 }
 
 .greeting-content {
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: 65px;
-    margin-top: 150px;
-    padding: 0 16px;
-    text-align: left;      /* vertical centering */ 
+    max-width: 800px;
+    margin: 0;
     color: #0051ba;
-    font-size: 34px;
+    font-size: 2.5rem;
+    line-height: 1.5;
     font-family: "Inter", sans-serif;
 }
 
 img.headshot {
-    margin-left: 70px;
-    margin-top: -700px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     clip-path: circle(39%);
+    -webkit-clip-path: circle(39%);
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        font-size: 22px;
+        padding: 0 20px;
+        min-height: 80px;
+    }
+
+    .about-me {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 24px;
+    }
+
+    .greeting-content {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    img.headshot {
+        max-width: 250px;
+    }
 }
