@@ -57,9 +57,9 @@ img.headshot {
 
 @media (max-width: 768px) {
     .main-header {
-        font-size: 16px;
-        padding: 0 20px;
-        min-height: 80px;
+        font-size: 14px;
+        padding: 0 10px;
+        min-height: 40px;
     }
 
     .about-me {
