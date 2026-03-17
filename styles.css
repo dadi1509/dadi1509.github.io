@@ -26,7 +26,6 @@ body {
     gap: 20px;
     padding: 10px 60px 0 60px;
     flex-wrap: wrap;
-    flex-direction: row-reverse;
 }
 
 .about-me-text {
@@ -58,7 +57,7 @@ img.headshot {
 
 @media (max-width: 768px) {
     .main-header {
-        font-size: 22px;
+        font-size: 16px;
         padding: 0 20px;
         min-height: 80px;
     }
