@@ -4,6 +4,10 @@ body {
     padding: 0; 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .main-header {
     color: #fffcf2;
     background-image: linear-gradient(135deg, #2aa4cf, #65c5bc, #6377be, #71afdc);
@@ -11,12 +15,35 @@ body {
     font-weight: 100;
     display: flex;
     align-items: center;      /* vertical centering */
+    justify-content: space-between;
+    gap: 24px;
     padding: 0 60px;          /* not too close to left/right */
     max-height: 100px;  
     font-size: 30px; 
     position: sticky;
     top: 0;
     z-index: 999;
+    box-shadow: 0 4px 16px rgba(0, 81, 186, 0.15);
+}
+
+.site-nav {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.site-nav a {
+    color: #fffcf2;
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 4px;
+}
+
+.site-nav a:hover {
+    border-bottom-color: #fffcf2;
 }
 
 .about-me {
@@ -55,11 +82,100 @@ img.headshot {
     -webkit-clip-path: circle(39%);
 }
 
+.portfolio-section {
+    padding: 70px 60px 90px;
+    font-family: "Inter", sans-serif;
+}
+
+.section-heading {
+    max-width: 920px;
+    margin: 0 auto 34px;
+}
+
+.eyebrow,
+.project-label {
+    color: #6377be;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin: 0 0 8px;
+    text-transform: uppercase;
+}
+
+.section-heading h2 {
+    color: #0051ba;
+    font-size: 2.6rem;
+    line-height: 1.1;
+    margin: 0 0 14px;
+}
+
+.section-heading p {
+    color: #25456e;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(0, 81, 186, 0.16);
+    border-radius: 22px;
+    box-shadow: 0 16px 38px rgba(0, 81, 186, 0.10);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 360px;
+    padding: 28px;
+}
+
+.project-card h3 {
+    color: #0051ba;
+    font-size: 1.45rem;
+    line-height: 1.25;
+    margin: 0 0 14px;
+}
+
+.project-card p {
+    color: #24384f;
+    font-size: 1rem;
+    line-height: 1.65;
+    margin: 0;
+}
+
+.download-link {
+    align-self: flex-start;
+    background: #0051ba;
+    border-radius: 999px;
+    color: #fffcf2;
+    font-weight: 700;
+    margin-top: 24px;
+    padding: 12px 18px;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.download-link:hover {
+    box-shadow: 0 10px 20px rgba(0, 81, 186, 0.22);
+    transform: translateY(-2px);
+}
+
 @media (max-width: 768px) {
     .main-header {
         font-size: 14px;
         padding: 0 10px;
         min-height: 40px;
+    }
+
+    .site-nav {
+        gap: 12px;
     }
 
     .about-me {
@@ -75,5 +191,13 @@ img.headshot {
 
     img.headshot {
         max-width: 250px;
+    }
+
+        .portfolio-section {
+        padding: 44px 20px 64px;
+    }
+
+    .section-heading h2 {
+        font-size: 2rem;
     }
 }
